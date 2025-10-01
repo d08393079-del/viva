@@ -1,0 +1,465 @@
+/* Global */
+ul li::marker {
+  color: #3f64ff;
+}
+/* End Global */
+
+/* Blog Page */
+.wd-post-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* End Blog Page */
+
+/* Modal pop-up styles */
+/* Modal overlay */
+.zip-modal {
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0,0,0,0.4);
+	overflow: auto;
+}
+
+/* Modal box */
+.zip-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 12% auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Close button */
+.zip-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Input */
+#zipInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+/* Buttons */
+.zip-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zip-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.zip-submit {
+  background: #2d5eff;
+  color: #fff;
+}
+
+.zip-later {
+  background: transparent;
+  color: #2d5eff;
+}
+/* End Modal pop-up styles */
+
+/* Single Page Template styles */
+.page-hero {
+	padding: 25px 0;
+	text-align: center;
+}
+.single-page-body-elementor-section {
+	width: 90%;
+	margin-inline: auto;
+  padding-inline: 1rem;
+}
+.single-page-body-elementor-section p, strong {
+	font-size: 20px;
+}
+.single-page-body-elementor-section strong {
+	font-weight: bolder;
+}
+.single-page-body-elementor-section h2 {
+  font-size: 28px;
+  margin-bottom: 20;
+}
+.single-page-body-elementor-section h3 {
+  font-size: 24px;
+}
+.single-page-body-elementor-section h4 {
+	color: #242424;
+  font-size: 20px;
+}
+.single-page-body-elementor-section p, strong, li, h1, h2, h3, h4, h5, h6 {
+  color: #242424;
+}
+.single-page-body-elementor-section ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+.single-page-body-elementor-section ul li::marker {
+  color: #3f64ff;
+}
+.single-page-body-elementor-section ul li {
+  font-size: 20px;
+}
+.single-page-body-elementor-section ul li a :not(.wd-products-element, .wd-products-element *) {
+  color: #3f64ff;
+  text-decoration: underline;
+}
+.single-page-body-elementor-section a :not(.wd-products-element, .wd-products-element *) {
+  color: #3f64ff;
+  text-decoration: underline;
+}
+
+.single-page-body-elementor-section a span :not(.wd-products-element, .wd-products-element *) {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* End of Single Page Template styles */
+
+/* Single Product Page */
+/* Linked variations */
+/* Radio-button look for the swatch anchors */
+.variations .wd-swatches .radio-option,
+.variations .wd-swatches .radio-option:hover {
+  text-decoration: none !important;
+}
+
+/* Base pill */
+.variations .wd-swatches .radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid #cdd3da;
+  border-radius: 8px;
+  line-height: 1.2;
+  color: #2a2a2a;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+/* Spacing between options */
+.variations .wd-swatches .radio-option + .radio-option { margin-left: 8px; }
+
+/* The circle (unselected) */
+.variations .wd-swatches .radio-option::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 2px solid #b0b7c3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: radial-gradient(transparent 0 45%, transparent 46% 100%);
+}
+
+/* Hover */
+.variations .wd-swatches .radio-option:hover {
+  border-color: #3f64ff;
+}
+
+/* Selected state (uses your .wd-active class) */
+.variations .wd-swatches .radio-option.wd-active {
+  border: 2px solid #3f64ff;
+  box-shadow: 0 0 0 2px rgba(63, 100, 255, .15);
+  font-weight: 600;
+  color: #000;
+}
+
+.variations .wd-swatches .radio-option.wd-active::before {
+  border-color: #3f64ff;
+  background: radial-gradient(#3f64ff 0 45%, transparent 46% 100%);
+}
+/* End Radio-button look for the swatch anchors */
+
+/* Delivery options */
+.delivery-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.delivery-option:hover {
+    background: #f0f6ff;
+}
+.delivery-option .icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+.delivery-option .label {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.delivery-option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2563eb; /* blue border */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.delivery-option input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Info icon style */
+.info-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    background: #2563eb; /* blue circle */
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Tooltip */
+.info-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 10;
+	width:300px;
+}
+
+/* Tooltip arrow */
+.info-icon::before {
+    content: "";
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Show tooltip on hover */
+.info-icon:hover::after,
+.info-icon:hover::before {
+    opacity: 1;
+}
+/* End Delivery options */
+/* Extra Info */
+.extra-info {
+    color: #0a0a0a;
+}
+.extra-amount {
+	color: #3F64FF;
+}
+
+.extra-info .volume-discount,
+.extra-info .delivery-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+/* End Extra Info */
+/* Disable swatch link hover */
+.wd-swatches a.wd-disabled {
+  pointer-events: none;
+}
+/* End Single Product Page */
+/* End Linked variations */
+
+/* Header menu styles */
+.header_menu_wrapper {
+	background: black;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 44px;
+	padding-right: 44px;
+	border-radius: 20px;
+	margin-left: -25px;
+}
+
+/* Product cart */
+.add_to_cart_button {
+	display: none;
+}
+
+/* Single product page */
+.zip-related-area {
+	display: none;
+}
+
+.product-element-bottom {
+	justify-content: space-between;
+}
+
+.zip-code-placeholder {
+	width: -webkit-fill-available;
+	width: 100%;
+}
+
+.get-quote-button,
+.view-product-button {
+	width: 100%;
+	width: -webkit-fill-available;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.55px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #3f64ff, #5e8bff);
+  text-decoration: none;
+  text-transform: unset;
+  transition: background-position 0.4s ease, box-shadow 0.3s ease;
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  box-shadow: 0 4px 12px rgba(63, 100, 255, 0.3);
+}
+..get-quote-button:hover,
+.view-product-button:hover {
+	color: #fff;
+  background-position: 100% 50%;
+  box-shadow: 0 6px 18px rgba(63, 100, 255, 0.5);
+}
+
+.custom-product-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.custom-product-price {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f64ff;
+}
+
+.custom-product-delivery {
+  font-family: Nunito;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Styling for the loading spinner container */
+.loading-spinner {
+  border: 4px solid #f3f3f3; /* Light grey border */
+  border-top: 4px solid #3498db; /* Blue border on top to create the spin effect */
+  border-radius: 50%; /* Makes the element a circle */
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite; /* Applies the 'spin' animation */
+  margin: 10px auto; /* Centers the spinner horizontally */
+}
+
+/* The animation keyframes */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* End of product cart styles */
+
+/* WP forms */
+#wpforms-form-2276 .wpforms-submit-container{
+	display:flex;
+	justify-content:flex-end;
+}
+
+#wpforms-form-2276 input, input::placeholder {
+    text-align: left;
+}
+/* End WP forms */
+
+#tidio-chat {
+    bottom: 50px !important;
+}
+
+/* Contact form */
+.mfp-content .wd-popup{ border-radius:14px }
+
+.custom-contact-form .wpcf7-form p{ margin:0 !important; }
+.custom-contact-form .wpcf7-form .wpcf7-form-control-wrap{
+  display:block; margin:4px 0 !important;
+}
+
+.custom-contact-form .wpcf7-form input.wpcf7-form-control:not([type=submit]){
+  height:60px; padding:10px 10px; border-radius:14px;
+}
+.custom-contact-form .wpcf7-form textarea.wpcf7-form-control{
+  min-height:130px; padding:10px 10px; border-radius:12px;
+}
+
+.custom-contact-form .wpcf7-submit{
+  float:right; margin-top:8px; padding:14px 20px; border-radius:12px;
+}
+.custom-contact-form .wpcf7-form::after{ content:""; display:block; clear:both; }
+
+.wpcf7-form-control{
+	margin-bottom: 15px;
+}
+/* Contact form ends */
